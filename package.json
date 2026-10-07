@@ -1,0 +1,15 @@
+{
+  "name": "qq-bot-plugin-daily",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "qq-plugin build",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@qq-bot/plugin-sdk": "https://github.com/AnnaofArendelle/qq-bot-plugin-sdk/releases/download/v1.0.0/qq-bot-plugin-sdk-1.0.0.tgz",
+    "typescript": "5.9.3"
+  }
+}
