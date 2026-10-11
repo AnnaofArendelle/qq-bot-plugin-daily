@@ -1,6 +1,6 @@
 {
   "name": "qq-bot-plugin-daily",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@qq-bot/plugin-sdk": "https://github.com/AnnaofArendelle/qq-bot-plugin-sdk/releases/download/v1.0.1/qq-bot-plugin-sdk-1.0.1.tgz",
+    "@qq-bot/plugin-sdk": "https://github.com/AnnaofArendelle/qq-bot-plugin-sdk/releases/download/v1.0.4/qq-bot-plugin-sdk-1.0.4.tgz",
     "typescript": "5.9.3"
   },
   "description": "Daily fortune and pictures plugin for MoeBot (猫猫机器人)"
