@@ -1,1 +1,61 @@
-{"apiVersion":1,"id":"daily","name":"每日人品与图片","version":"1.0.2","entry":"plugin.mjs","description":"猫猫机器人（MoeBot）官方插件。今日人品、重置人品、今日图和随机图。日期按 UTC+8 计算。","repository":"https://github.com/AnnaofArendelle/qq-bot-plugin-daily","permissions":["reply.text","reply.image","storage","http"],"commands":[{"id":"fortune","triggers":[".jrrp","!jrrp","。jrrp","！jrrp"],"description":"查询今天的人品值"},{"id":"reset","triggers":["/rejrrp"],"description":"重置自己的人品值"},{"id":"picture","triggers":["今日小马图","随机小马图","今日冰雪图","随机冰雪图"],"description":"获取今日固定图片或随机图片"}]}
+{
+  "apiVersion": 1,
+  "id": "daily",
+  "name": "每日人品与图片",
+  "version": "1.0.3",
+  "entry": "plugin.mjs",
+  "description": "猫猫机器人（MoeBot）官方插件。今日人品、重置人品、今日图和随机图。日期按 UTC+8 计算。",
+  "repository": "https://github.com/AnnaofArendelle/qq-bot-plugin-daily",
+  "permissions": [
+    "reply.text",
+    "reply.image",
+    "storage",
+    "http"
+  ],
+  "commands": [
+    {
+      "id": "fortune",
+      "triggers": [
+        "/jrrp",
+        ".jrrp",
+        "!jrrp",
+        "。jrrp",
+        "！jrrp"
+      ],
+      "description": "查询今天的人品值",
+      "panel": {
+        "order": 100,
+        "description": "查询今天的人品值"
+      }
+    },
+    {
+      "id": "reset",
+      "triggers": [
+        "/rejrrp"
+      ],
+      "description": "重置自己的人品值",
+      "panel": {
+        "order": 101,
+        "description": "重置自己的人品值"
+      }
+    },
+    {
+      "id": "picture",
+      "triggers": [
+        "今日小马图",
+        "随机小马图",
+        "今日冰雪图",
+        "随机冰雪图",
+        "/今日小马图",
+        "/随机小马图",
+        "/今日冰雪图",
+        "/随机冰雪图"
+      ],
+      "description": "获取今日固定图片或随机图片",
+      "panel": {
+        "order": 102,
+        "description": "获取今日固定图片或随机图片"
+      }
+    }
+  ]
+}

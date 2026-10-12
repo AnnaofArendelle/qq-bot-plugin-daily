@@ -29,8 +29,9 @@ export default definePlugin<Config>({
     }
     if(command.id==='picture') {
       if(!c.picturesEnabled) { await ctx.reply.text('该功能已关闭。');return; }
-      const keyword=works[m.text.slice(2,-1)];
-      const today=m.text.startsWith('今日');const key='picture:'+keyword;
+      const text=m.text.replace(/^\//,'');
+      const keyword=works[text.slice(2,-1)];
+      const today=text.startsWith('今日');const key='picture:'+keyword;
       let url:string|null=null;
       try {
         if(today) { try { const row=await ctx.storage.get<{day:string;url:string}>(key);if(row?.day===day())url=row.url; } catch {} }
