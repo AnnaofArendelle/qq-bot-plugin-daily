@@ -5,7 +5,7 @@
   "version": "1.0.3",
   "entry": "plugin.mjs",
   "description": "猫猫机器人（MoeBot）官方插件。今日人品、重置人品、今日图和随机图。日期按 UTC+8 计算。",
-  "repository": "https://github.com/AnnaofArendelle/qq-bot-plugin-daily",
+  "repository": "https://github.com/MoeBotOfficial/MoeBot-Plugin-Daily",
   "permissions": [
     "reply.text",
     "reply.image",
