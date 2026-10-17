@@ -23,7 +23,7 @@ npm run typecheck
 npm test
 ```
 
-输出 `dist/daily-1.0.2.zip`。SDK 独立维护于 [qq-bot-plugin-sdk](https://github.com/MoeBotOfficial/MoeBot-Plugin-SDK)。配置表单由 config.schema.json 自动生成；完整接口、资源限制和 AI 开发提示见 SDK 仓库。
+输出 `dist/daily-1.0.2.zip`。SDK 独立维护于 [MoeBot-Plugin-SDK](https://github.com/MoeBotOfficial/MoeBot-Plugin-SDK)。配置表单由 config.schema.json 自动生成；完整接口、资源限制和 AI 开发提示见 SDK 仓库。
 
 官方后端首次升级会将旧 jrrp / daily_pic 记录导入 daily 的命名空间，旧表保留供回滚。后续运行只访问插件存储，不写入聊天消息表。
 
